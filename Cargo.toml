@@ -10,7 +10,7 @@ bench = false
 [dependencies]
 anyhow = "1.0.95"
 biblatex = { version = "0.10.0", features = ["serde"] }
-cached = { version = "0.54.0", features = ["disk_store"] }
+cacache = "13.1.0"
 clap = { version = "4.5.23", features = ["derive"] }
 clap-verbosity-flag = "3.0.2"
 env_logger = "0.11.6"

@@ -119,6 +119,13 @@ Conclusion: approach 1.1. Since it would be better to feed from file. but I woul
 
 Conclusion: approach 2.
 
+### Crates for caching in Rust
+
+* [`cached`](https://github.com/jaemk/cached)
+    * Disk cache uses [sled](https://github.com/spacejam/sled), which doesn't support multiple open instances. Deal-breaker, since biblioteca.nvim must be usable from multiple Neovim instances.
+* [`cacache`](https://github.com/zkat/cacache-rs)
+    * The API is a bit more manual, but so far works pretty well.
+
 ## End-result
 
 How biblioteca.nvim as Neovim plugin could work:
