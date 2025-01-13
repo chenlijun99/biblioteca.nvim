@@ -17,10 +17,16 @@
     taplo
     # Markdown linter & formatter
     markdownlint-cli2
+    rustfmt
+    clippy
+    gh
+    gnutar
   ];
 
   # https://devenv.sh/languages/
-  languages.rust.enable = true;
+  languages.rust = {
+    enable = true;
+  };
   languages.lua.enable = true;
 
   # https://devenv.sh/processes/
@@ -67,6 +73,8 @@
       files = "\\.(lua)$";
       pass_filenames = false;
     };
+    rustfmt.enable = true;
+    clippy.enable = true;
   };
 
   # See full reference at https://devenv.sh/reference/options/

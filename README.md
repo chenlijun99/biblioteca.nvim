@@ -33,6 +33,7 @@ biblioteca.nvim is primarily a Neovim plugin for managing citation data. However
 ```lua
 {
   'chenlijun99/biblioteca',
+  build = "./install.sh",
   dependencies = {
     "nvim-lua/plenary.nvim",
     "nvim-telescope/telescope.nvim", -- optional
